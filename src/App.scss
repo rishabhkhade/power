@@ -10,6 +10,7 @@
   --lwl_d: 1400px;
   --trans: all 0.33s cubic-bezier(0.42, 0.97, 0.52, 1.49);
   --trans2: all 1s cubic-bezier(0.42, 0.97, 0.52, 1.49);
+  --unit: 16px
 }
 
 *,
@@ -53,10 +54,16 @@ h4 {
 }
 
 P {
-  font-size: 16px;
-  color: var(--text);
-  font-weight: 400;
-  line-height: 24px;
+  text-wrap: pretty;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 160%;
+  max-width: 65ch;
+  text-align: justify;
+  text-align-last: left;
+  word-spacing: 2px;
+  color: var(--baiege);
 }
 
 .parent {
@@ -74,18 +81,18 @@ P {
 }
 
 .btn {
-  text-decoration: none;
-  color: var(--white);
-  background: linear-gradient(90deg, var(--darkorange), red);
-  cursor: pointer;
-  padding: 10px 30px;
-  border-radius: 100px;
-  transition: var(--trans2);
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  width: fit-content;
+  background: var(--green);
   border: none;
+  border-radius: calc(var(--unit) / 3);
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 16px 32px;
+  padding: calc(var(--unit)) calc(var(--unit) * 2);
+  text-transform: uppercase;
+  transition: var(--trans);
+  width: fit-content;
+  color: var(--accent) ;
 
   &:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.43);
@@ -102,4 +109,23 @@ P {
 
 a {
   text-decoration: none;
+}
+
+
+.swiper-pagination .swiper-pagination-clickable .swiper-pagination-bullets .swiper-pagination-horizontal{
+ background: var(--green);
+  color: var(--green);
+}
+
+
+.swiper-pagination-bullet .swiper-pagination-bullet-active{
+  background: var(--green);
+  color: var(--green);
+
+}
+
+.swiper-pagination-bullet{
+  background: var(--green);
+  color: var(--green);
+
 }
