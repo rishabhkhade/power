@@ -51,3 +51,274 @@
         }
     }
 }
+
+
+//about
+.about-parent {
+    padding: 50px 0px;
+
+    .about-cont {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        gap: 20px;
+
+        .left {
+            width: 50%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            p {
+                color: black;
+            }
+        }
+
+        .right {
+            width: 50%;
+            // height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+
+            .img-about {
+                border-radius: calc(var(--unit) / 2);
+                width: 100%;
+                height: 100%;
+                background: url("../../assets/solar1.avif");
+            }
+
+        }
+    }
+}
+
+
+//vision mission
+.v-m-parent {
+    .v-m-cont {
+        display: flex;
+
+        .left {
+            width: 50%;
+            padding: 60px;
+            background: var(--blue);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+
+            span {
+                svg {
+                    font-size: 80px;
+                    position: absolute;
+                    top: 35px;
+                    opacity: 0.2;
+                    color: white;
+                    z-index: 1;
+                }
+            }
+
+            p {
+                font-size: 22px;
+                max-width: 45ch;
+                color: var(--white);
+                font-weight: 600;
+            }
+        }
+
+        .right {
+            width: 50%;
+            padding: 60px;
+            background: var(--green);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+
+            span {
+                svg {
+                    font-size: 80px;
+                    position: absolute;
+                    top: 35px;
+                    opacity: 0.1;
+                }
+            }
+
+            p {
+                font-size: 22px;
+                max-width: 45ch;
+                color: var(--blue);
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+//partner
+.companies-name-parent {
+    padding: 50px 0px;
+
+    .companies-name-cont {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .imgaes {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+
+            &::after {
+                content: "";
+                height: 100%;
+                width: 100px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: linear-gradient(to right, white 70%, transparent);
+                z-index: 1;
+            }
+
+            &::before {
+                content: "";
+                height: 100%;
+                width: 100px;
+                background: linear-gradient(to left, white 70%, transparent);
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 1;
+            }
+
+            .box {
+                width: 200px;
+                height: 100px;
+                box-shadow: var(--shadow);
+                background: rgba(128, 128, 128, 0.421);
+                border-radius: 5px;
+                position: absolute;
+                left: 100%;
+                animation: apple 10s infinite linear;
+
+                &:nth-child(2) {
+                    animation-delay: 2s;
+                }
+
+                &:nth-child(3) {
+                    animation-delay: 4s;
+                }
+
+                &:nth-child(4) {
+                    animation-delay: 6s;
+                }
+
+                &:nth-child(5) {
+                    animation-delay: 8s;
+                }
+            }
+        }
+    }
+}
+
+@keyframes apple {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -14%;
+    }
+}
+
+
+//testimonial
+.parent-testimonial {
+    background: var(--blue);
+    padding: 50px 0px;
+
+    .cont-testimonial {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: calc(var(--unit) * 4) 0;
+
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: calc(var(--unit) * 2);
+
+            .card {
+                color: var(--white) #fff;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: calc(var(--unit) * 3);
+                width: 100%;
+
+                .img-container {
+                    border-radius: calc(var(--unit) / 2);
+                    overflow: hidden;
+                    width: 100%;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                        transition: var(--trans);
+                        width: 100%;
+                    }
+                }
+
+                .content {
+                    h3 {
+                        color: var(--white);
+                        padding: calc(var(--unit)) 0;
+                        width: 100%;
+                        font-weight: 900;
+                        line-height: 110%;
+                        font-size: 32px;
+
+                        &::after {
+                            background: var(--green);
+                            border-radius: 10px;
+                            content: "";
+                            display: block;
+                            height: 3px;
+                            margin-top: calc(var(--unit) / 2);
+                            width: 100%;
+                        }
+                    }
+
+
+
+                    .details {
+                        align-items: center;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .location,
+                        .capacity {
+                            align-items: center;
+                            display: flex;
+                            gap: calc(var(--unit) / 4);
+
+                            span {
+                                align-items: center;
+                                display: flex;
+                                justify-content: center;
+                                color: var(--green);
+                                font-size: 24px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

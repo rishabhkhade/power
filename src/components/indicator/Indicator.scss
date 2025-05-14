@@ -1,0 +1,17 @@
+.section-indicator {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+
+  .line {
+    height: 3px;
+    width: 45px;
+    border-radius: 20px;
+  }
+
+  span{
+    font-weight: 600;
+    font-size: 20px;
+  }
+}

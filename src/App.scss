@@ -10,7 +10,9 @@
   --lwl_d: 1400px;
   --trans: all 0.33s cubic-bezier(0.42, 0.97, 0.52, 1.49);
   --trans2: all 1s cubic-bezier(0.42, 0.97, 0.52, 1.49);
-  --unit: 16px
+  --unit: 16px;
+  --shadow: 0px 0px 10px rgba(0, 0, 0, 0.123);
+
 }
 
 *,
@@ -30,7 +32,7 @@ body {
   width: 100svw;
   overflow-x: hidden;
   min-height: 100vh;
-  background-color: var(--baiege);
+  background-color: var(--white);
 }
 
 h1 {
@@ -101,7 +103,7 @@ P {
   }
 }
 
-.bg-img {
+.bg-img-cover {
   background-position: center center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
