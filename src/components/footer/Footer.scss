@@ -1,58 +1,64 @@
 .footer-parent {
-  margin: 50px 50px;
-  .footer-cont {
-    display: flex;
-    gap: 10px;
-    .logo {
-      width: 20%;
-      background: red;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .imp-links {
-      width: 30%;
-      background: red;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .other-links {
-      background: red;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      width: 30%;
-    }
-    .contact {
-      width: 20%;
-      background: red;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
+  background: var(--blue);
+  border-top: 1px solid #ffffff0d;
+  padding: calc(var(--unit) * 2);
 
-    .nav-menu {
+  .footer-cont {
+    display: grid;
+    gap: calc(var(--unit) * 2);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+    .foot-col {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      a {
-        text-decoration: none;
+      padding: calc(var(--unit));
+
+      h4 {
+        color: var(--white);
+        font-size: 1.2rem;
+        margin-bottom: calc(var(--unit) * 2);
       }
 
-      .about {
+      .foot-logo {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
+        gap: calc(var(--unit) / 2);
+        margin-bottom: calc(var(--unit) * 1.2);
+      }
 
-        span {
+      .foot-links {
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--unit));
+
+        a {
+          color: var(--white);
           display: flex;
-          align-items: center;
-          justify-content: center;
+          gap: calc(var(--unit) / 4);
+          line-height: 130%;
+          opacity: .8;
+          transition: var(--trans);
+
+          span {
+            align-items: center;
+            color: var(--green);
+            display: flex;
+            justify-content: center;
+          }
         }
       }
     }
+
+
+  }
+
+  .foot2 {
+    align-items: center;
+    border-top: 1px solid hsla(0, 0%, 100%, .165);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    padding: calc(var(--unit));
+    width: 100%;
   }
 }

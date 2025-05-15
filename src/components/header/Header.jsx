@@ -7,14 +7,14 @@ function Header() {
         <>
             <div className="parent header-parent">
                 <div className="container header-cont">
-                    <Link style={{color:"white"}}>Logo</Link>
+                    <Link style={{ color: "white" }}>Logo</Link>
                     <div className="menu">
-                        <Link className={'active'}>Home</Link>
-                        <Link >About</Link>
-                        <Link>Services</Link>
-                        <Link>Projects</Link>
-                        <Link>Download</Link>
-                        <Link>Contact</Link>
+                        <Link to="/">Home</Link>
+                        <Link to="/about" >About</Link>
+                        <Link to="/services">Services</Link>
+                        <Link to="/projects">Projects</Link>
+                        <Link to="/download">Download</Link>
+                        <Link to="/contact">Contact</Link>
                     </div>
                 </div>
             </div>

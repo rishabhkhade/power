@@ -13,7 +13,7 @@ function Contact() {
             <h2>
               Get <span>in Touch</span>
             </h2>
-            <p>
+            <p style={{color:"black"}}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni.
             </p>
             <div class="form">

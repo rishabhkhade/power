@@ -8,10 +8,6 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { CiLocationOn } from "react-icons/ci";
 import { ImPower } from "react-icons/im";
 
-
-
-
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles

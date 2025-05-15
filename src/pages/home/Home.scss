@@ -248,11 +248,17 @@
         flex-direction: column;
         justify-content: start;
         padding: calc(var(--unit) * 4) 0;
+        gap: 20px;
+
+        h3{
+            color: white;
+        }
 
         .cards {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-column-gap: calc(var(--unit) * 2);
+            margin-top: 30px;
 
             .card {
                 color: var(--white) #fff;
