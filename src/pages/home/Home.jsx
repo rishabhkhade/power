@@ -80,7 +80,7 @@ const data = [
               spaceBetween={30}
               centeredSlides={true}
               autoplay={{
-                delay: 250000,
+                delay: 2500,
                 disableOnInteraction: false,
               }}
               pagination={{
@@ -109,7 +109,7 @@ const data = [
       <div class="parent about-parent">
         <div class="container about-cont">
           <div class="left">
-            <Indicator text="About us" bg="var(--green)" />
+            <Indicator text="About us" bg="var(--green)" textcolor="white" />
             <h3>Lorem, ipsum dolor.</h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
@@ -131,6 +131,22 @@ const data = [
 
           <div class="right ">
             <div className='bg-img-cover img-about'></div>
+          </div>
+        </div>
+      </div>
+
+       {/* our partner */}
+      <div class="parent companies-name-parent">
+        <div class="container companies-name-cont">
+          <Indicator text="Our Partner" bg={"var(--green)"} />
+          <h3>Our Associates</h3>
+
+          <div class="imgaes">
+            <div class="box1 box"></div>
+            <div class="box2 box"></div>
+            <div class="box3 box"></div>
+            <div class="box4 box"></div>
+            <div class="box5 box"></div>
           </div>
         </div>
       </div>
@@ -165,21 +181,7 @@ const data = [
         </div>
       </div>
 
-      {/* our partner */}
-      <div class="parent companies-name-parent">
-        <div class="container companies-name-cont">
-          <Indicator text="Our Partner" bg={"var(--green)"} />
-          <h3>Our Associates</h3>
-
-          <div class="imgaes">
-            <div class="box1 box"></div>
-            <div class="box2 box"></div>
-            <div class="box3 box"></div>
-            <div class="box4 box"></div>
-            <div class="box5 box"></div>
-          </div>
-        </div>
-      </div>
+     
 
 
       {/* testimonial */}

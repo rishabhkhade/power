@@ -1,6 +1,7 @@
 .about-parent {
   height: 100svh;
   padding: 150px 0px;
+  background: var(--blue);
 
   .about-cont {
     display: flex;
@@ -14,10 +15,18 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+
+      h3{
+        color: var(--white);
+      }
+
+      p{
+        color: rgba(255, 255, 255, 0.749);
+      }
     }
 
     .right {
-      background: blue;
+      // background: blue;
       width: 50%;
       padding: 10px;
     }
@@ -167,7 +176,7 @@
     justify-content: center;
 
     .box-wrapper {
-      background: var(--blue);
+      // background: var(--blue);
       padding: 20px;
       display: flex;
       width: 1000px;

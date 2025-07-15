@@ -6,8 +6,7 @@
   --green: #b4d628;
   --baiege: #fef7ef;
   --darkbaiege: #f2e7d9;
-  --swl_d: 1200px;
-  --lwl_d: 1400px;
+  --max-width: 1200px;
   --trans: all 0.33s cubic-bezier(0.42, 0.97, 0.52, 1.49);
   --trans2: all 1s cubic-bezier(0.42, 0.97, 0.52, 1.49);
   --unit: 16px;
@@ -62,8 +61,6 @@ P {
   letter-spacing: 1px;
   line-height: 160%;
   max-width: 65ch;
- 
-  text-align-last: left;
   word-spacing: 2px;
   color: var(--baiege);
 }
