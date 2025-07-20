@@ -106,8 +106,8 @@ const data = [
       </div>
 
       {/* about */}
-      <div class="parent about-parent">
-        <div class="container about-cont">
+      <div class="parent about-parent-about">
+        <div class="container about-cont-about">
           <div class="left">
             <Indicator text="About us" bg="var(--green)" textcolor="white" />
             <h3>Lorem, ipsum dolor.</h3>

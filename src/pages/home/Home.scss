@@ -49,7 +49,7 @@
                 img {
                     width: 100%;
                     height: 100%;
-                  
+
                     border-radius: 8px;
                 }
             }
@@ -59,10 +59,11 @@
 
 
 //about
-.about-parent {
+.about-parent-about {
     padding: 50px 0px;
+    background: var(--blue);
 
-    .about-cont {
+    .about-cont-about {
         display: flex;
         align-items: stretch;
         justify-content: center;
@@ -75,8 +76,13 @@
             flex-direction: column;
             gap: 20px;
 
+            h3 {
+                color: var(--white);
+
+            }
+
             p {
-                color: black;
+                color: rgba(255, 255, 255, 0.775);
             }
         }
 
@@ -354,21 +360,25 @@
 @media (max-width: 900px) {
     .hero-parent {
         padding: 60px 10px;
+
         .hero-cont {
             flex-direction: column-reverse;
+
             .left {
                 width: 100%;
                 align-items: center;
                 justify-content: center;
 
-                p{
+                p {
                     text-align: center;
                     width: 100%;
                 }
 
             }
+
             .right {
                 width: 100%;
+
                 .swiper-cont {
                     aspect-ratio: 3/2.5;
                     width: 100%;
@@ -381,6 +391,56 @@
                         border-radius: 8px;
                     }
                 }
+            }
+        }
+    }
+}
+
+
+
+
+//about responsive
+@media(max-width: 1000px) {
+    .about-parent-about {
+        .about-cont-about {
+            flex-direction: column-reverse;
+
+            .left {
+                width: 100%;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .right {
+                width: 100%;
+                aspect-ratio: 3/2;
+
+                .img-about {
+                    border-radius: calc(var(--unit) / 2);
+                    width: 100%;
+                    // height: 100%;
+                    background: url("../../assets/solar1.avif");
+                }
+            }
+        }
+    }
+}
+
+
+//v-m-reponsive
+@media(max-width:1000px) {
+    .v-m-parent {
+        .v-m-cont {
+            flex-direction: column;
+
+            .left {
+                width: 100%;
+            }
+
+            .right {
+                width: 100%;
             }
         }
     }
