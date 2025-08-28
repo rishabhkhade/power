@@ -5,6 +5,7 @@ import { RiArrowRightSLine } from "react-icons/ri";
 import { FiPhone } from "react-icons/fi";
 import { FaRegEnvelope } from "react-icons/fa6";
 import { CiLocationOn } from "react-icons/ci";
+import logo from "../../assets/download.svg"
 
 function Footer() {
   return (
@@ -13,7 +14,12 @@ function Footer() {
         <div className="container footer-cont">
 
           <div className="foot-col foot-col1">
-            <a className="foot-logo" style={{ color: "white" }}>logo</a>
+            <a className="foot-logo" style={{ color: "white" }}>
+              
+              <img src={logo} />
+              <p style={{fontSize:"20px", fontWeight:"900"}}>Er Power</p>
+              
+            </a>
             <p>Emppyreal Renewables & Power Pvt. Ltd. is an all verticals renewable energy EPC company established in 2017.
             </p>
           </div>
@@ -26,15 +32,15 @@ function Footer() {
               </a>
               <a>
                 <span><RiArrowRightSLine /></span>
-                About
+                Services
               </a>
               <a>
                 <span><RiArrowRightSLine /></span>
-                About
+                Projects
               </a>
               <a>
                 <span><RiArrowRightSLine /></span>
-                About
+                Contact
               </a>
             </div>
           </div>
@@ -43,19 +49,19 @@ function Footer() {
             <div className="foot-links">
               <a>
                 <span><RiArrowRightSLine /></span>
-                About
+                Home
               </a>
               <a>
                 <span><RiArrowRightSLine /></span>
-                About
+               Download Brochure
               </a>
               <a>
                 <span><RiArrowRightSLine /></span>
-                About
+                Privacy
               </a>
               <a>
                 <span><RiArrowRightSLine /></span>
-                About
+                Policy
               </a>
             </div>
           </div>

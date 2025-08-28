@@ -36,7 +36,7 @@ function Contact() {
               </span>
               <div class="phone">
                 <span>Phone</span>
-                <h5>+91 9865782645</h5>
+                <h5>+91 8010894591</h5>
               </div>
             </div>
 
@@ -46,7 +46,7 @@ function Contact() {
               </span>
               <div class="phone">
                 <span>Mail</span>
-                <h5>Lorem, ipsum dolor.</h5>
+                <h5>servicesupport@erpower.in</h5>
               </div>
             </div>
 
@@ -56,7 +56,7 @@ function Contact() {
               </span>
               <div class="phone">
                 <span>Address</span>
-                <h5>Lorem ipsum dolor sit amet.</h5>
+                <h5>Plot no. 39A, 5th floor, Siddhivinayak Homes, Lakadganj, Nagpur- 440008</h5>
               </div>
             </div>
           </div>

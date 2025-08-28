@@ -1,12 +1,23 @@
 import React from 'react'
 import "./Home.scss"
 import { Link } from 'react-router-dom'
-import solar1 from '../../assets/solar1.avif'
-import solar2 from '../../assets/solar2.avif'
+import hero1 from '../../assets/hero/20230202_165454.jpg';
+import hero2 from '../../assets/hero/adb tata.jpg';
+import hero3 from '../../assets/hero/shabana.jpg';
 import Indicator from "../../components/indicator/Indicator";
 import { IoSettingsOutline } from "react-icons/io5";
 import { CiLocationOn } from "react-icons/ci";
 import { ImPower } from "react-icons/im";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import solar2 from '../../assets/solar2.avif'
+import MW_utility from "../../assets/projects_home/5_MW_utility_msedcl.jpg"
+import Ashta_laxmi from "../../assets/projects_home/Ashta_laxmi.jpg"
+import kk_protien from "../../assets/projects_home/kk_protien.jpg"
+import nagpur from "../../assets/projects_home/nagpur.jpg"
+import shivam_mill from "../../assets/projects_home/shivam_mill.jpg"
+
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -19,40 +30,47 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 function Home() {
 
+   useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      once: false,     
+    });
+  }, []);
+
 const data = [
   {
-    img:solar2,
-    heading:"Lorem ipsum dolor sit amet consectetur.",
+    img:MW_utility,
+    heading:"5 MW utility msedcl",
+    location:"Maharastra",
+    no:"5"
+  },
+  {
+    img:Ashta_laxmi,
+    heading:"Ashta laxmi 490 kW",
+    location:"Maharastra",
+    no:"5"
+  },
+  {
+    img:shivam_mill,
+    heading:"Shivam Paper Mill 500 kw",
     location:"Maharastra",
     no:"5"
   },
   {
     img:solar2,
-    heading:"Lorem ipsum dolor sit amet consectetur.",
+    heading:"Getwell hospital 82 kW",
     location:"Maharastra",
     no:"5"
   },
   {
-    img:solar2,
-    heading:"Lorem ipsum dolor sit amet consectetur.",
+    img:kk_protien,
+    heading:"K. K. proteins 320 kW",
     location:"Maharastra",
     no:"5"
   },
   {
-    img:solar2,
-    heading:"Lorem ipsum dolor sit amet consectetur.",
-    location:"Maharastra",
-    no:"5"
-  },
-  {
-    img:solar2,
-    heading:"Lorem ipsum dolor sit amet consectetur.",
-    location:"Maharastra",
-    no:"5"
-  },
-  {
-    img:solar2,
-    heading:"Lorem ipsum dolor sit amet consectetur.",
+    img:nagpur,
+    heading:"Nagpur Sortex 800 kW",
     location:"Maharastra",
     no:"5"
   },
@@ -64,7 +82,7 @@ const data = [
   return (
     <>
       {/* Hero section */}
-      <div className="parent hero-parent">
+      <div className="parent hero-parent"  data-aos="fade-up" data-aos-delay="100">
         <div className="container hero-cont">
           <div className="left">
             <h1>Empower Projects with <br />
@@ -80,7 +98,7 @@ const data = [
               spaceBetween={30}
               centeredSlides={true}
               autoplay={{
-                delay: 250000,
+                delay: 2500,
                 disableOnInteraction: false,
               }}
               pagination={{
@@ -91,13 +109,13 @@ const data = [
               className="mySwiper"
             >
               <SwiperSlide className='swiper-cont'>
-                <img src={solar1} alt="slide 1" />
+                <img src={hero1} alt="slide 1" />
               </SwiperSlide>
               <SwiperSlide className='swiper-cont'>
-                <img src={solar2} alt="slide 2" />
+                <img src={hero2} alt="slide 2" />
               </SwiperSlide>
               <SwiperSlide className='swiper-cont'>
-                <img src={solar1} alt="slide 3" />
+                <img src={hero3} alt="slide 3" />
               </SwiperSlide>
 
             </Swiper>
@@ -106,23 +124,13 @@ const data = [
       </div>
 
       {/* about */}
-      <div class="parent about-parent-about">
+      <div class="parent about-parent-about" data-aos="fade-up" data-aos-delay="200">
         <div class="container about-cont-about">
           <div class="left">
-            <Indicator text="About us" bg="var(--green)" textcolor="white" />
-            <h3>Lorem, ipsum dolor.</h3>
+            <Indicator text="About us" bg="var(--green)" textcolor="black" />
+            <h3>Discover ER Power</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
-              quisquam maiores doloremque iusto voluptas modi, nam odit?
-              Molestiae quaerat pariatur, nostrum, totam tempora, culpa
-              reiciendis deleniti exercitationem officia accusamus quod
-              consequatur ullam architecto est rem. Odit, cupiditate eum saepe
-              vitae quibusdam unde. Adipisci dolores quas magnam aliquam quidem
-              placeat similique.nostrum, totam tempora, culpa reiciendis
-              deleniti exercitationem officia accusamus quod consequatur ullam
-              architecto est rem. Odit, cupiditate eum saepe vitae quibusdam
-              unde. Adipisci dolores quas magnam aliquam quidem placeat
-              similique.
+             Emppyreal Renewables & Power Pvt. Ltd. is an all-verticals renewable energy EPC company established in 2017. It is classified as a non-government company registered at the Registrar of Companies, Mumbai. From technological selection procurement, integration and maintenance, We are leading the way with engineered solutions that are both proven and practical as the world turns to alternatives in the face of high oil prices, depleting coal reserves, growing concerns over energy security, and the threat of climate change. We have made our mark in residential,commercial, governmental, and industrial establishments. We are present in more than 8 states and 2 union territories in India. We are about to set our footprints overseas with our first international project in the Maldives. We have a stronghold in central,western, and southern India, with more than 17 MW of renewable projects successfully executed & about 72 MW work in progress.
             </p>
             <div class="btn" style={{ width: "fit-content" }}>
               Know more
@@ -135,24 +143,10 @@ const data = [
         </div>
       </div>
 
-       {/* our partner */}
-      <div class="parent companies-name-parent">
-        <div class="container companies-name-cont">
-          <Indicator text="Our Partner" bg={"var(--green)"} />
-          <h3>Our Associates</h3>
-
-          <div class="imgaes">
-            <div class="box1 box"></div>
-            <div class="box2 box"></div>
-            <div class="box3 box"></div>
-            <div class="box4 box"></div>
-            <div class="box5 box"></div>
-          </div>
-        </div>
-      </div>
+ 
 
       {/* vission and mission */}
-      <div class="parent v-m-parent">
+      <div class="parent v-m-parent" data-aos="fade-up" data-aos-delay="300">
         <div class=" v-m-cont">
           <div class="left">
             <Indicator text="Our Vision" bg="var(--green)" textcolor="white" />
@@ -160,10 +154,7 @@ const data = [
               <IoSettingsOutline />
             </span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ad
-              minus quod sunt doloremque veritatis dolores, facilis voluptatibus
-              sint deserunt dolor necessitatibus aperiam eum? Numquam fugit unde
-              maiores quis delectus.
+              To be the best performing and quality efficient Renewabe Energy and Power Company in the World.
             </p>
           </div>
           <div class="right">
@@ -172,23 +163,43 @@ const data = [
               <IoSettingsOutline />
             </span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ad
-              minus quod sunt doloremque veritatis dolores, facilis voluptatibus
-              sint deserunt dolor necessitatibus aperiam eum? Numquam fugit unde
-              maiores quis delectus.
+             To build a world-class portfolio of renewable energy assets and be at the top globally.
             </p>
           </div>
         </div>
       </div>
 
      
+      {/* our partner */}
+      <div class="parent companies-name-parent" data-aos="fade-up" data-aos-delay="400">
+        <div class="container companies-name-cont">
+          <Indicator text="Our Partner" bg={"var(--green)"} />
+          <h3>Our Associates</h3>
 
+          <div class="logos-slider">
+      <div class="logos-track">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+
+     
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+      </div>
+    </div>
+        </div>
+      </div>
 
       {/* testimonial */}
 
       <div className="parent parent-testimonial">
         <div className="container cont-testimonial">
-          <Indicator text="Our Testimonials" bg={"var(--green)"} />
+          <Indicator text="Our Testimonials" bg={"var(--green)"} textcolor={"white"} />
           <h3>Our Projects</h3>
           <div className="cards">
             {

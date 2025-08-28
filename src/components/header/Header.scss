@@ -11,6 +11,22 @@
         display: flex;
         justify-content: space-between;
 
+        .logo-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+
+            img {
+                height: 30px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 900;
+            }
+        }
+
         .menu {
             align-items: center;
             display: flex;
@@ -24,19 +40,25 @@
                 line-height: 21px;
                 position: relative;
                 text-transform: uppercase;
-                transform: var(--trans);
                 transition: var(--trans);
 
-                &.active::after {
-                    background: var(--green);
-                    border-radius: 10px;
+                &::after {
                     content: "";
                     display: block;
-                    height: calc(var(--unit) / 8);
+                    height: 3px;
+                    width: 0%;
+                    margin: 6px 0 0 0;
+                    border-radius: 10px;
+                    background: var(--green);
                     transition: var(--trans);
+                }
+
+                &.active::after {
+                    width: 100%;
                 }
             }
         }
+
 
     }
 }

@@ -1,112 +1,71 @@
 import React from "react";
 import "./About.scss";
 import Indicator from "../../components/indicator/Indicator";
-import { IoSettingsOutline } from "react-icons/io5";
+import PageTop from "../../components/page-top/PageTop";
+import { FaLinkedin } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import rohit from "../../assets/rohit.jpg"
+import piyush from "../../assets/piyush.jpg"
+
 
 
 function About() {
   return (
     <>
+    <PageTop text="About" subText="Us" />
       <div class="parent about-parent">
         <div class="container about-cont">
           <div class="left">
-            <Indicator text="About us" bg="var(--green)" textcolor="white" />
+            <Indicator text="About us" bg="var(--green)" textcolor="var(--blue)" />
 
-            <h3>Lorem, ipsum dolor.</h3>
+            <h3>Discover ER Power</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
-              quisquam maiores doloremque iusto voluptas modi, nam odit?
-              Molestiae quaerat pariatur, nostrum, totam tempora, culpa
-              reiciendis deleniti exercitationem officia accusamus quod
-              consequatur ullam architecto est rem. Odit, cupiditate eum saepe
-              vitae quibusdam unde. Adipisci dolores quas magnam aliquam quidem
-              placeat similique.nostrum, totam tempora, culpa reiciendis
-              deleniti exercitationem officia accusamus quod consequatur ullam
-              architecto est rem. Odit, cupiditate eum saepe vitae quibusdam
-              unde. Adipisci dolores quas magnam aliquam quidem placeat
-              similique.
+             Emppyreal Renewables & Power Pvt. Ltd. is an all-verticals renewable energy EPC company established in 2017. It is classified as a non-government company registered at the Registrar of Companies, Mumbai. From technological selection procurement, integration and maintenance, We are leading the way with engineered solutions that are both proven and practical as the world turns to alternatives in the face of high oil prices, depleting coal reserves, growing concerns over energy security, and the threat of climate change. We have made our mark in residential,commercial, governmental, and industrial establishments. We are present in more than 8 states and 2 union territories in India. We are about to set our footprints overseas with our first international project in the Maldives. We have a stronghold in central,western, and southern India, with more than 17 MW of renewable projects successfully executed & about 72 MW work in progress.
             </p>
             <div class="btn" style={{ width: "fit-content" }}>
               Know more
             </div>
           </div>
 
-          <div class="right"></div>
+          <div class="right bg-img-cover"></div>
         </div>
       </div>
 
-      <div class="parent v-m-parent">
-        <div class=" v-m-cont">
-          <div class="left">
-            <Indicator text="Vission" />
-            <span>
-              {" "}
-              <IoSettingsOutline />
-            </span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ad
-              minus quod sunt doloremque veritatis dolores, facilis voluptatibus
-              sint deserunt dolor necessitatibus aperiam eum
-            </p>
-          </div>
-          <div class="right">
-            <Indicator text="Mission" bg="green" />
-            <span>
-              {" "}
-              <IoSettingsOutline />
-            </span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ad
-              minus quod sunt doloremque veritatis dolores, facilis voluptatibus
-              sint deserunt dolor necessitatibus aperiam eum
-            </p>
-          </div>
-        </div>
-      </div>
+    
 
 
 
-      <div class="parent owner-parent">
+      <div class="parent owner-parent bg-img-cover">
         <div class="container owner-cont">
           <div class="box-wrapper">
             <div class="left">
-              <h3>Lorem, ipsum.</h3>
+              <h3>Mr. Rohit Shaniware</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repudiandae in placeat distinctio. Quis dolorem dolore aliquid
-                sunt quidem fugit corporis deserunt animi soluta veritatis
-                suscipit, nihil similique voluptas labore sed.
-                sunt quidem fugit corporis deserunt animi soluta veritatis
-                suscipit, nihil similique voluptas labore sed.
+                An MBA graduate who supervises the company's sales, marketing, and finance with a strategic acumen for continual growth and holds vast business expertise. His roles and responsibilities include identifying, developing, and directing the implementation of business strategies.
               </p>
-              <div class="button">
-                <span>logo</span>
-                <p>Submit</p>
-              </div>
+              <Link class="button">
+                <span><FaLinkedin /></span>
+                <p>Linkdin</p>
+              </Link>
             </div>
             <div class="right">
-              <img src="" alt="" />
+              <img src={rohit} alt="" />
             </div>
           </div>
 
           <div class="box-wrapper box2">
             <div class="left">
-              <h3>Lorem, ipsum.</h3>
+              <h3>Mr. Piyush Dahule</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repudiandae in placeat distinctio. Quis dolorem dolore aliquid
-                sunt quidem fugit corporis deserunt animi soluta veritatis
-                suscipit, nihil similique voluptas labore sed.
-                sunt quidem fugit corporis deserunt animi soluta veritatis
-                suscipit, nihil similique voluptas labore sed.
+                An Electrical Engineer who supervises the technology selections, installation & procurement having responsibilities include strategic technical direction, and of project execution. He has extensive experience in electrical maintenance, line installation up to 66 kV.
               </p>
-              <div class="button">
-                <span>logo</span>
-                <p>Submit</p>
-              </div>
+             <Link class="button">
+                <span><FaLinkedin /></span>
+                <p>Linkdin</p>
+              </Link>
             </div>
             <div class="right">
-              <img src="" alt="" />
+              <img src={piyush} alt="" />
             </div>
           </div>
         </div>

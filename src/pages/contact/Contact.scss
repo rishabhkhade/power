@@ -1,5 +1,5 @@
 .parent-contact {
-  padding: 50px 0px;
+  padding: 150px 0px;
 
   .cont-contact {
     display: flex;
@@ -27,6 +27,7 @@
 
         input,
         textarea {
+          width: 100%;
           padding: 12px;
           border-radius: 8px;
           border: 1px solid rgba(0, 0, 0, 0.425);
@@ -38,7 +39,7 @@
 
     .right {
       width: 40%;
-      background: rgb(11, 2, 51);
+      background: var(--blue);
       padding: 40px 20px;
       border-radius: 8px;
       display: flex;
@@ -59,7 +60,7 @@
 
         .phone {
           span {
-            color: green;
+            color: var(--green);
             font-weight: 500;
           }
 

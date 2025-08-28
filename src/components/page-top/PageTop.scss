@@ -1,0 +1,30 @@
+.pagetop-parent {
+    background: var(--blue);
+    height: 300px;
+    margin-top: calc(var(--unit) * 9 / 2);
+    position: relative;
+
+    .pagetop-cont {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        color: var(--white);
+        h2{
+            font-size: 36px;
+            font-weight: 900;
+
+            span{
+                padding-left: 10px;
+                font-size: 36px;
+            font-weight: 900;
+            color: var(--green);
+            }
+        }
+    }
+}

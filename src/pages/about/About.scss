@@ -1,7 +1,7 @@
 .about-parent {
   height: 100svh;
   padding: 150px 0px;
-  background: var(--blue);
+  background: var(--white);
 
   .about-cont {
     display: flex;
@@ -16,157 +16,32 @@
       flex-direction: column;
       gap: 20px;
 
-      h3{
-        color: var(--white);
+      h3 {
+        color: var(--blue);
       }
 
-      p{
-        color: rgba(255, 255, 255, 0.749);
+      p {
+        color: rgba(12, 12, 12, 0.749);
       }
     }
 
     .right {
-      // background: blue;
       width: 50%;
       padding: 10px;
+      background: url("../../assets/about.jpg");
+      border-radius: 8px;
+      aspect-ratio: 3/1.8;
     }
-  }
-}
-
-.v-m-parent {
-  .v-m-cont {
-    display: flex;
-
-    .left {
-      width: 50%;
-      padding: 60px;
-      background: var(--blue);
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      position: relative;
-
-      span {
-        svg {
-          font-size: 80px;
-          position: absolute;
-          top: 35px;
-          opacity: 0.1;
-        }
-      }
-
-      p {
-        font-size: 26px;
-        max-width: 45ch;
-      }
-    }
-
-    .right {
-      width: 50%;
-      padding: 60px;
-      background: var(--green);
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      position: relative;
-
-      span {
-        svg {
-          font-size: 80px;
-          position: absolute;
-          top: 35px;
-          opacity: 0.1;
-        }
-      }
-
-      p {
-        font-size: 26px;
-        max-width: 45ch;
-      }
-    }
-  }
-}
-
-.companies-name-parent {
-  .companies-name-cont {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    .imgaes {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      height: 200px;
-      overflow: hidden;
-
-      &::after {
-        content: "";
-        height: 100%;
-        width: 100px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background: linear-gradient(to right, white 70%, transparent);
-        z-index: 1;
-      }
-
-      &::before {
-        content: "";
-        height: 100%;
-        width: 100px;
-        background: linear-gradient(to left, white 70%, transparent);
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 1;
-      }
-
-      .box {
-        width: 200px;
-        height: 100px;
-        border: 1px solid rgba(114, 114, 114, 0.548);
-        border-radius: 5px;
-        position: absolute;
-        left: 100%;
-        animation: apple 10s infinite linear;
-
-        &:nth-child(2) {
-          animation-delay: 2s;
-        }
-
-        &:nth-child(3) {
-          animation-delay: 4s;
-        }
-
-        &:nth-child(4) {
-          animation-delay: 6s;
-        }
-
-        &:nth-child(5) {
-          animation-delay: 8s;
-        }
-      }
-    }
-  }
-}
-
-@keyframes apple {
-  0% {
-    left: 100%;
-  }
-
-  100% {
-    left: -14%;
   }
 }
 
 
 
 .owner-parent {
-  padding: 50px 0px;
+
+  padding: 150px 0px;
+  background: linear-gradient(rgba(177, 177, 177, 0.314), rgba(177, 177, 177, 0.314)), url("../../assets/bg.webp");
+
 
   .owner-cont {
     display: flex;
@@ -176,19 +51,15 @@
     justify-content: center;
 
     .box-wrapper {
-      // background: var(--blue);
-      padding: 20px;
+      background: var(--blue);
+      border-radius: calc(var(--unit) * 1);
       display: flex;
-      width: 1000px;
-      align-items: center;
-      justify-content: center;
-      border-radius: calc(var(--unit) / 2);
-
-      &.box2 {
-        flex-direction: row-reverse !important;
-        gap: 20px;
-      }
-
+      height: auto;
+      justify-content: space-between;
+      margin-top: calc(var(--unit) * 2);
+      padding: calc(var(--unit) * 1);
+      width: 900px;
+      gap: 20px;
 
       .left {
         display: flex;
@@ -196,34 +67,49 @@
         flex-direction: column;
         width: 70%;
 
+        h3 {
+          font-size: 30px;
+          color: var(--green);
+        }
+
         .button {
-          display: flex;
-          gap: 10px;
-          cursor: pointer;
-          padding: 10px 20px;
-          border-radius: 100px;
-          border: none;
-          background-color: var(--accent);
-          font-weight: 500;
-          display: flex;
-          justify-content: center;
           align-items: center;
-          color: #f0f0f0;
+          background: #0077b5;
+          border-radius: calc(var(--unit) / 4);
+          color: var(--white);
+          display: flex;
+          font-size: 1.2rem;
+          gap: calc(var(--unit) / 2);
+          margin-top: calc(var(--unit) / 2);
+          padding: calc(var(--unit) / 2);
           width: fit-content;
+          justify-content: center;
+
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
         }
       }
 
       .right {
         width: 30%;
         border-radius: 5px;
-        height: 250px;
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        img {
+        img{
           width: 100%;
           height: 100%;
-          background: var(--green);
           border-radius: 5px;
+          object-fit: cover;
         }
+        
+
+
       }
 
     }
