@@ -17,6 +17,8 @@ import Ashta_laxmi from "../../assets/projects_home/Ashta_laxmi.jpg"
 import kk_protien from "../../assets/projects_home/kk_protien.jpg"
 import nagpur from "../../assets/projects_home/nagpur.jpg"
 import shivam_mill from "../../assets/projects_home/shivam_mill.jpg"
+import QuoteSection from "../../components/before-footer/QuoteSection";
+
 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -229,6 +231,7 @@ const data = [
         </div>
       </div>
 
+ <QuoteSection />
 
 
     </>

@@ -1,0 +1,43 @@
+.quote-section {
+  background: var(--baiege); // dark navy background
+  padding: 40px 20px;
+  border-top-left-radius: 60px; // rounded curve like your design
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    margin: 0 auto;
+  }
+
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+
+  .quote {
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--green); // green text like in design
+    margin: 0;
+    text-align: left;
+  }
+
+  @media (max-width: 768px) {
+    .quote-container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .quote {
+      font-size: 18px;
+    }
+  }
+}

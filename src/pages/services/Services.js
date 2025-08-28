@@ -3,6 +3,10 @@ import "./Services.scss";
 import img from "../../assets/solar1.avif"
 import Indicator from "../../components/indicator/Indicator";
 import PageTop from "../../components/page-top/PageTop";
+import AOS from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
+
 
 const servicesData = [
     {
@@ -38,11 +42,20 @@ const servicesData = [
 ];
 
 function Services() {
+
+ useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      once: false,     
+    });
+  }, []);
+
+
     return (
         <>
         <PageTop text="Our" subText="Services" />
             <>
-                <div className="services-header">
+                <div className="services-header" data-aos="fade-up" data-aos-delay="100">
                     <Indicator text="Our Services" bg="var(--green)" />
                     <h3><span>What do</span> <span className="highlight">we Offer</span></h3>
                 </div>

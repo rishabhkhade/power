@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Contact.scss";
 import { MdLocalPhone } from "react-icons/md";
 import { FaEnvelope } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
+import PageTop from "../../components/page-top/PageTop";
+import AOS from "aos";
+
 
 function Contact() {
+
+
+ useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      once: false,     
+    });
+  }, []);
+
   return (
     <>
-      <div class="parent parent-contact">
+    <PageTop text="Connect" subText="with us" />
+      <div class="parent parent-contact" data-aos="fade-up" data-aos-delay="100">
         <div class="container cont-contact">
           <div class="left">
             <h2>

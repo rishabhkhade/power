@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Projects.scss"
 import { Swiper, SwiperSlide } from 'swiper/react';
+import AOS from "aos";
+
 
 // Import Swiper styles
 import solar1 from '../../assets/solar1.avif'
@@ -18,10 +20,19 @@ import shivam_mill from "../../assets/shivam_mill.jpg"
 
 
 function Projects() {
+
+ useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      once: false,     
+    });
+  }, []);
+
+
   return (
     <>
       <PageTop text="Our" subText="Projects" />
-      <div className="parent project-parent">
+      <div className="parent project-parent" data-aos="fade-up" data-aos-delay="100">
         <div className="container project-cont">
 
           <Swiper

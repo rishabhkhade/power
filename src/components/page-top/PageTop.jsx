@@ -4,7 +4,7 @@ import "./PageTop.scss"
 const PageTop = ({text, subText}) => {
   return (
     <>
-      <div className="pagetop-parent">
+      <div className="pagetop-parent bg-img-cover">
         <div className="pagetop-cont">
             <h2>{text}  
                 <span>{subText}</span>

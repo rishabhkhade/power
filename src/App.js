@@ -22,6 +22,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/download" element={<Download />} />
           <Route path="/contact" element={<Contact />} />
+          
         </Routes>
         <Footer />
       </BrowserRouter>

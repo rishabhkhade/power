@@ -10,6 +10,7 @@ import logo from "../../assets/download.svg"
 function Footer() {
   return (
     <>
+   
       <div className="parent footer-parent">
         <div className="container footer-cont">
 

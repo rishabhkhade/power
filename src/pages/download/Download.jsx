@@ -11,7 +11,14 @@ function Download() {
           <div className="box-cont">
             <h3>Download Our Brochure</h3>
             <p>Click the button below to download the brochure</p>
-            <div className="btn">Download NOW</div>
+            <a
+              href="/COMPANY%20PROFILE.pdf"
+              download="COMPANY PROFILE.pdf"
+              className="btn"
+            >
+              Download NOW
+            </a>
+
           </div>
         </div>
       </div>

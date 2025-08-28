@@ -6,14 +6,27 @@ import { FaLinkedin } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import rohit from "../../assets/rohit.jpg"
 import piyush from "../../assets/piyush.jpg"
+import AOS from "aos";
+import { useEffect } from "react";
 
 
 
 function About() {
+
+
+
+ useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      once: false,     
+    });
+  }, []);
+
+
   return (
     <>
     <PageTop text="About" subText="Us" />
-      <div class="parent about-parent">
+      <div class="parent about-parent" data-aos="fade-up" data-aos-delay="100">
         <div class="container about-cont">
           <div class="left">
             <Indicator text="About us" bg="var(--green)" textcolor="var(--blue)" />
@@ -35,7 +48,7 @@ function About() {
 
 
 
-      <div class="parent owner-parent bg-img-cover">
+      <div class="parent owner-parent bg-img-cover" data-aos="fade-up" data-aos-delay="200">
         <div class="container owner-cont">
           <div class="box-wrapper">
             <div class="left">
