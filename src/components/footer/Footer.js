@@ -15,7 +15,7 @@ function Footer() {
         <div className="container footer-cont">
 
           <div className="foot-col foot-col1">
-            <a className="foot-logo" style={{ color: "white" }}>
+            <a href="/" className="foot-logo" style={{ color: "white" }}>
               
               <img src={logo} />
               <p style={{fontSize:"20px", fontWeight:"900"}}>Er Power</p>
