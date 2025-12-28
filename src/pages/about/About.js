@@ -13,8 +13,6 @@ import { useEffect } from "react";
 
 function About() {
 
-
-
  useEffect(() => {
     AOS.init({
       duration: 1000, 
