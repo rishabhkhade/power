@@ -1,7 +1,6 @@
 .quote-section {
-  background: var(--baiege); // dark navy background
+  background: var(--baiege);
   padding: 40px 20px;
-  border-top-left-radius: 60px; // rounded curve like your design
   position: relative;
   overflow: hidden;
   display: flex;
@@ -38,6 +37,7 @@
 
     .quote {
       font-size: 18px;
+      text-align: center;
     }
   }
 }

@@ -1,5 +1,5 @@
 .parent-contact {
-  padding: 150px 0px;
+  padding: 50px 10px;
 
   .cont-contact {
     display: flex;
@@ -67,6 +67,56 @@
           h5 {
             color: white;
             font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .parent-contact {
+    padding: 50px 10px;
+
+    .cont-contact {
+      flex-direction: column;
+
+      .left {
+        width: 80%;
+        gap: 10px;
+      }
+
+      .right {
+        width: 80%;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .parent-contact {
+    .cont-contact {
+      .left {
+        width: 100%;
+      }
+
+      .right {
+        width: 100%;
+
+        .phone-wrap {
+          span {
+            svg {
+              font-size: 22px;
+              color: white;
+            }
+          }
+
+          .phone {
+            h5 {
+              font-size: 16px;
+              font-weight: 300;
+            }
           }
         }
       }

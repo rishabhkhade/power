@@ -11,7 +11,6 @@
   --trans2: all 1s cubic-bezier(0.42, 0.97, 0.52, 1.49);
   --unit: 16px;
   --shadow: 0px 0px 10px rgba(0, 0, 0, 0.123);
-
 }
 
 *,
@@ -51,7 +50,7 @@ h1,
 h2,
 h3,
 h4 {
-  text-transform: capitalize !important
+  text-transform: capitalize !important;
 }
 
 P {
@@ -72,7 +71,6 @@ P {
   .container {
     height: 100%;
     max-width: var(--max-width);
-
     margin: auto;
     padding: 0px 10px;
     // overflow-x: hidden!important;
@@ -91,12 +89,20 @@ P {
   text-transform: uppercase;
   transition: var(--trans);
   width: fit-content;
-  color: var(--accent) ;
+  color: var(--accent);
 
   &:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.43);
     transform: scale(1.05);
     transition: var(--trans);
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 16px;
   }
 }
 
@@ -110,21 +116,20 @@ a {
   text-decoration: none;
 }
 
-
-.swiper-pagination .swiper-pagination-clickable .swiper-pagination-bullets .swiper-pagination-horizontal{
- background: var(--green);
+.swiper-pagination
+  .swiper-pagination-clickable
+  .swiper-pagination-bullets
+  .swiper-pagination-horizontal {
+  background: var(--green);
   color: var(--green);
 }
 
-
-.swiper-pagination-bullet .swiper-pagination-bullet-active{
+.swiper-pagination-bullet .swiper-pagination-bullet-active {
   background: var(--green);
   color: var(--green);
-
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background: var(--green);
   color: var(--green);
-
 }
