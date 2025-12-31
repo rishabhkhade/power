@@ -51,6 +51,14 @@
 }
 
 @media (max-width: 650px) {
+  .download-parent {
+  height: 0;
+  padding: 200px 10px;
+
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
   .box-cont {
     justify-content: center;
     text-align: center;
