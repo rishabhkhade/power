@@ -69,11 +69,11 @@ function Footer() {
           <div className="foot-col foot-col4">
             <h4 className="foot-header">Contacts</h4>
             <div className="foot-links">
-              <a>
+              <a href="tel:+91 80108 94591">
                 <span><FiPhone /></span>
                 +91 80108 94591
               </a>
-              <a>
+              <a href="mailto:info@erpower.com">
                 <span><FaRegEnvelope /></span>
                 info@erpower.com
               </a>
