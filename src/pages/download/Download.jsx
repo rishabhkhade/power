@@ -1,6 +1,6 @@
-import React from 'react'
-import "./Download.scss"
-import PageTop from '../../components/page-top/PageTop'
+import React from "react";
+import "./Download.scss";
+import PageTop from "../../components/page-top/PageTop";
 
 function Download() {
   return (
@@ -18,12 +18,11 @@ function Download() {
             >
               Download NOW
             </a>
-
           </div>
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default Download
+export default Download;

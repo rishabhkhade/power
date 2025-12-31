@@ -95,7 +95,7 @@ function Home() {
               power plant integration.
             </p>
 
-            <Link className="btn">Consult Now</Link>
+            <Link to="/contact" className="btn">Consult Now</Link>
           </div>
 
           <div className="right">
@@ -155,9 +155,9 @@ function Home() {
               17 MW of renewable projects successfully executed & about 72 MW
               work in progress.
             </p>
-            <div class="btn" style={{ width: "fit-content" }}>
+            <Link to="/contact" class="btn" style={{ width: "fit-content" }}>
               Know more
-            </div>
+            </Link>
           </div>
 
           <div class="right ">

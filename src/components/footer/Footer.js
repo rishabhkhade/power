@@ -27,19 +27,19 @@ function Footer() {
           <div className="foot-col foot-col2">
             <h4 className="foot-header">Important Links</h4>
             <div className="foot-links">
-              <a>
+              <a href="/about">
                 <span><RiArrowRightSLine /></span>
                 About
               </a>
-              <a>
+              <a href="/services">
                 <span><RiArrowRightSLine /></span>
                 Services
               </a>
-              <a>
+              <a href="/projects">
                 <span><RiArrowRightSLine /></span>
                 Projects
               </a>
-              <a>
+              <a href="/contact">
                 <span><RiArrowRightSLine /></span>
                 Contact
               </a>
@@ -48,21 +48,21 @@ function Footer() {
           <div className="foot-col foot-col3">
             <h4 className="foot-header">Other Links</h4>
             <div className="foot-links">
-              <a>
+              <a href="/">
                 <span><RiArrowRightSLine /></span>
                 Home
               </a>
-              <a>
+              <a href="/download">
                 <span><RiArrowRightSLine /></span>
                Download Brochure
               </a>
-              <a>
+              <a href="/privacy">
                 <span><RiArrowRightSLine /></span>
-                Privacy
+                Privacy / Policy
               </a>
-              <a>
+              <a href="/terms">
                 <span><RiArrowRightSLine /></span>
-                Policy
+                Terms and Condition
               </a>
             </div>
           </div>

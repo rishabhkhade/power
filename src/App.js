@@ -8,7 +8,8 @@ import About from "./pages/about/About";
 import Services from "./pages/services/Services";
 import Projects from "./pages/projects/Projects";
 import Download from "./pages/download/Download";
-
+import Terms from "./pages/terms/Terms";
+import Privacy from "./pages/privacy/Privacy";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/download" element={<Download />} />
           <Route path="/contact" element={<Contact />} />
-          
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
         <Footer />
       </BrowserRouter>
